@@ -39,7 +39,7 @@ function Login() {
     const parameters = {
       response_type: "token",
       client_id:
-        "1095582733852-smqnbrhcoiasjjg8q28u0g1k3nu997b0.apps.googleusercontent.com",
+        "338869441248-ke7dap6q6p948als144phfkel8ivfbg8.apps.googleusercontent.com",
       scope: "email profile",
       redirect_uri: window.location.origin + "/login/callback",
     };
@@ -107,6 +107,9 @@ function Profile() {
   if (error) {
     return <div>Error! {error.toString()}</div>;
   }
+
+  console.log(data)
+
 
   return (
     <div>
